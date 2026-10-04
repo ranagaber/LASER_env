@@ -1,0 +1,24 @@
+[project]
+name = "laser"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=5.0.1",
+    "huggingface-hub>=1.33.0",
+    "laser-encoders>=0.0.2",
+    "matplotlib>=3.11.2",
+    "modal>=1.6.1",
+    "seaborn>=0.13.2",
+    "sentencepiece>=0.2.2",
+    "transformers>=5.18.0",
+]
+
+[project.scripts]
+laser = "laser:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
